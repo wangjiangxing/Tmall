@@ -1,0 +1,41 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container-fluid"> 
+	<div class="navbar-header">
+		<a class="navbar-brand" href="#">后台管理</a>
+	</div>
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">用户管理 
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="UserList.action">查看用户列表</a></li>
+	</ul>
+	<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">类别管理
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="categoryList.action">查看所有类别</a></li>
+		<li><a href="../managecategory/AddCategory.jsp">新增类别</a></li>
+	</ul>
+</div>
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">商品管理
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+	<li><a href="ProductList1.action?SelectID=0">产品列表</a></li>
+		<li><a href="AddProduct.action">添加商品</a></li>
+		<li><a href="AddProductPicture.action">添加商品图片</a></li>
+		<li><a href="ProductList3.action?SelectID=0">修改商品</a></li>
+	</ul>
+</div>
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">订单管理 
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu" role="menu">
+		<li><a href="orderList.action">查看订单</a></li>
+	</ul>
+</div>
+</div>

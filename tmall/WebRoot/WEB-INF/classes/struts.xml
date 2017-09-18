@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE struts PUBLIC
+ "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ "http://struts.apache.org/dtds/struts-2.0.dtd">
+ <struts>
+ <package name="struts2" extends="struts-default" >
+ <action name="UserList" class="AdminAction.UserAction" method="showlist">
+<result name="sucess">/Admin/manageuser/ShowAllUser.jsp</result>   </action>
+<action name="UserDelete" class="AdminAction.UserAction" method="deleteuser">
+<result name="sucess">/Admin/manageuser/DeleteUserSucess.jsp</result>   </action>
+<action name="categoryList" class="AdminAction.AdminCategoryAction" method="categorylist">
+<result name="sucess">/Admin/managecategory/ShowAllCategory.jsp</result>   </action>
+<action name="categoryDelete" class="AdminAction.AdminCategoryAction" method="deletecategory">
+<result name="sucess">/Admin/managecategory/CategorySucess.jsp</result>   </action>
+<action name="categoryAdd" class="AdminAction.AdminCategoryAction" method="addcategory">
+<result name="sucess">/Admin/managecategory/CategorySucess.jsp</result>   </action>
+<action name="AddProduct" class="AdminAction.AdminCategoryAction" method="categorylist">
+<result name="sucess">/Admin/manageproduct/AddProduct.jsp</result>   </action>
+<action name="AddProduct2" class="AdminAction.AdminProductAction" method="ProductInsert">
+<result name="sucess">/Admin/manageproduct/AddProductSucess.jsp</result>   </action>
+<action name="ProductList1" class="AdminAction.AdminProductAction" method="ProductListInID">
+<result name="sucess">/Admin/manageproduct/ShowAllProduct.jsp</result>   </action>
+<action name="ProductList2" class="AdminAction.AdminProductAction" method="ProductListInName">
+<result name="sucess">/Admin/manageproduct/ShowAllProduct.jsp</result>   </action>
+<action name="ProductList3" class="AdminAction.AdminProductAction" method="ProductListInID">
+<result name="sucess">/Admin/manageproduct/ModifyProduct.jsp</result>   </action>
+<action name="ProductList4" class="AdminAction.AdminProductAction" method="ProductListInName">
+<result name="sucess">/Admin/manageproduct/ModifyProduct.jsp</result>   </action>
+<action name="ProductDelete" class="AdminAction.AdminProductAction" method="deleteproduct">
+<result name="sucess">/Admin/manageproduct/ShowAllProduct.jsp</result>   </action>
+<action name="ProductModify" class="AdminAction.AdminProductAction" method="ProductListInID">
+<result name="sucess">/Admin/manageproduct/ProductModify.jsp</result>   </action>
+<action name="ProductModifyInsert" class="AdminAction.AdminProductAction" method="ModifyProduct">
+<result name="sucess">/Admin/manageproduct/ProductModifySucess.jsp</result>   </action>
+<action name="orderList" class="AdminAction.AdminOrderAction" method="orderlist">
+<result name="sucess">/Admin/manageorderform/ShowAllOrder.jsp</result>   </action>
+<action name="AddProductPicture" class="AdminAction.AdminProductAction" method="productlistForAddPicture">
+<result name="sucess">/Admin/manageproduct/AddProductPicture.jsp</result>   </action>
+ </package>
+ </struts>  
